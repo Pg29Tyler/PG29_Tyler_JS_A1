@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    height: 100vh;
+}
+.main-content{
+    flex: 0 1 75%;
+    text-align: center;
+}
+.sidebar{
+    flex: 0 1 25%;
+    background: #808080;
+   text-align: center;
+}
+
+#editor-panel {
+    flex: 1;
+}
+
+    #editor-panel h2 {
+        margin-top: 0;
+    }
+
+#editor {
+    width: 800px;
+    height: 600px;
+    border-radius: 8px;
+    border: 2px dashed #555;
+    position: relative;
+    background: #808080;
+    overflow: hidden;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    background: #070707;
+    position: absolute;
+}
+.enemy{
+    height: 25px;
+    width: 25px;
+    background-color: #4cff00;
+    border-radius: 50%;
+    display: inline-block;
+}
+.catapult{
+    height: 50px;
+    width: 20px;
+    background-color: saddlebrown;
+    position: absolute;
+}
+
+.catapult::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 50px;
+    background-color: saddlebrown;
+    bottom: 35px;
+    left: 2.5px;
+    transform-origin: bottom center;
+    transform: rotate(-35deg);
+}
+.catapult::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 50px;
+    background-color: saddlebrown;
+    bottom: 35px;
+    left: 2.5px;
+    transform-origin: bottom center;
+    transform: rotate(35deg);
+}
+.glass {
+    width: 50px;
+    height: 50px;
+    background: #00f7ff;
+    position: absolute;
+}
+.beam {
+    height: 80px;
+    width: 15px;
+    background-color: saddlebrown;
+    position: absolute;
+}
